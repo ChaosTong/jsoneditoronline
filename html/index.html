@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JSON Editor</title>
     <link type="text/css" rel="stylesheet" href="{{ jeCss }}">
     <link type="text/css" rel="stylesheet" href="app.{{ appCssChecksum }}.css">
@@ -9,6 +10,13 @@
 <body>
 <div id="root">
     <div class="app">
+        <header class="app-header">
+            <div class="brand">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <h1>JSON Editor</h1>
+            </div>
+            <p class="tagline">编辑 · 对照 · 同步</p>
+        </header>
         <div class="body">
             {{{include 'html/contents.html'}}}
         </div>

@@ -1,20 +1,24 @@
 <div class="contents-panel">
-    <div id="panel-left" class="left-panel" style="flex-grow: 0.49;"></div>
+    <div id="panel-left" class="left-panel" style="flex-grow: 0.49;">
+        <div id="editor-left" class="panel-mount"></div>
+    </div>
     <div id="panel-separator" class="center-panel">
         <div class="empty-space-top"></div>
         <div class="actions">
-            <button data-app-action="to-right" title="Copy the contents of the left panel to the right panel">
-                Copy &gt;
+            <button class="transfer-btn" type="button" data-app-action="to-right" title="将左侧内容复制到右侧" aria-label="复制到右侧">
+                →
             </button>
-            <button data-app-action="to-left" title="Copy the contents of the right panel to the left panel">
-                &lt; Copy
+            <button class="transfer-btn" type="button" data-app-action="to-left" title="将右侧内容复制到左侧" aria-label="复制到左侧">
+                ←
             </button>
         </div>
-        <div id="panel-separator-draghandle" class="draggable-splitter">
-            <div class="draggable-splitter-icon">
-                |
+        <div id="panel-separator-draghandle" class="draggable-splitter" title="拖动调整宽度" role="separator" aria-orientation="vertical">
+            <div class="draggable-splitter-icon" aria-hidden="true">
+                ⋮
             </div>
         </div>
     </div>
-    <div id="panel-right" class="right-panel" style="flex-grow: 0.51;"></div>
+    <div id="panel-right" class="right-panel" style="flex-grow: 0.51;">
+        <div id="editor-right" class="panel-mount"></div>
+    </div>
 </div>
